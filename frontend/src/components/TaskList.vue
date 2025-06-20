@@ -158,7 +158,7 @@ const toggleStatus = async (task) => {
 const confirmDelete = async (task) => {
   const result = await Swal.fire({
     title: 'Czy na pewno?',
-    text: `Czy chcesz usunąć zadanie "${task.title || task.name}"?`,
+    text: `Czy chcesz usunąć zadanie "${task.title}"?`,
     icon: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#dc3545',

@@ -99,7 +99,7 @@ watch(() => props.editTask, (newTask) => {
   if (newTask) {
     editMode.value = true
     form.value = {
-      title: newTask.title || newTask.name,
+      title: newTask.title,
       description: newTask.description || '',
       status: newTask.status
     }
